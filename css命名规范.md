@@ -57,4 +57,50 @@ SMACSS针对css提出了3条总的原则
     当然解耦程度越低越会增加额外的代码阅读负担。
 
 ### BEM 
-BEM即block element modifier这三块，核心的思想就是组建化，BEM通过块，元素，修饰符
+BEM即block element modifier这三块，核心的思想就是组建化，BEM通过块，元素，修饰符的约束来确保类名的唯一。
+* Block 所属组件名称
+* Element 组件内元素名称
+* Modifier 元素或组件修饰符
+
+比如一个表单元素块，按照常规我们会写成如下形式
+```
+<form class="search full">
+    <input type="text" class="field">
+    <input type="submit" value="search" class="button">
+</form>
+```
+而按照BEM的规则，我们可以写成如下的代码
+
+```
+<form class="search search--full">
+    <input type="text" class="search--text__field">
+    <input type="submit" value="search" class="search--submit__button">
+<form>
+
+```
+相比而言代码的可读性也是提高了不少。
+公司的项目中是使用了预处理器scss，在scss中嵌套使用BEM规范的话，可以选择使用@at-root来实现
+```
+<!-- before -->
+.block {
+    @at-root #{&}__element{
+
+    }
+    @at-root #{&}--modifier{
+
+    }
+}
+```
+```
+<!-- after -->
+.block {
+
+}
+.block-element {
+
+}
+.block__modifier {
+
+}
+```
+BEM 通过简单的命名规则使得关联类名元素语义性、可读性更强，利于项目管理和多人协作；同时 BEM 方案中并没有嵌套，所有类名最浅深度，并不会出现嵌套过深难以覆盖的情况，易于维护、复用；缺点则是实际使用中，维护 BEM 的命名确实需要一些成本，很多时候命名反而成了一件难事。

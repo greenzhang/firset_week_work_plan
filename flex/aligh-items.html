@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent {
+            background: #faefef;
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .parent--alignitems__flexstart {
+            align-items: flex-start;
+        }
+
+        .parent--alignitems__flexend {
+            align-items: flex-end;
+        }
+
+        .parent--alignitems__center {
+            align-items: center;
+        }
+
+        .parent--alignitems__stretch {
+            align-items: stretch;
+        }
+
+        .parent--alignitems__baseline {
+            align-items: baseline;
+        }
+
+        .child {
+            background: #007fff;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            color: #fff;
+        }
+
+        .child1 {
+            height: 300px;
+        }
+
+        .child2 {
+            height: 100px;
+        }
+
+        .child3 {
+            height: 200px;
+        }
+
+        .child4 {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent parent--alignitems__flexstart">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+    <div class="parent parent--alignitems__flexend">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+    <div class="parent parent--alignitems__center">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+    <div class="parent parent--alignitems__stretch">
+        <div class="child child11">1</div>
+        <div class="child child22">2</div>
+        <div class="child child33">3</div>
+        <div class="child child44">4</div>
+    </div>
+    <div class="parent parent--alignitems__baseline">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+
+</body>
+
+</html>

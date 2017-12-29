@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent {
+            background: #faefef;
+            display: flex;
+            margin: 10px 0;
+            height: 400px;
+        }
+
+        .child {
+            background: #007fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+        .flex-flexgrow {
+            flex-grow: 1;
+        }
+        .flex-flexgrow-2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child flex-flexgrow">1</div>
+        <div class="child flex-flexgrow">2</div>
+        <div class="child flex-flexgrow">3</div>
+    </div>
+    <div class="parent">
+        <div class="child flex-flexgrow">1</div>
+        <div class="child flex-flexgrow2">2</div>
+        <div class="child flex-flexgrow">3</div>
+    </div>
+</body>
+
+</html>

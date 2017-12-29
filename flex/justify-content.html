@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent {
+            background: #faefef;
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .parent-justifycontent__flexstart {
+            justify-content: flex-start;
+        }
+
+        .parent-justifycontent__flexend {
+            justify-content: flex-end;
+        }
+
+        .parent-justifycontent__center {
+            justify-content: center;
+        }
+
+        .parent-justifycontent__spacebetween {
+            justify-content: space-between;
+        }
+
+        .parent-justifycontent__spacearound {
+            justify-content: space-around;
+        }
+
+        .child {
+            background: #007fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            height: 100px;
+            color: #fff;
+        }
+
+        .child1 {
+            width: 300px;
+        }
+
+        .child2 {
+            width: 100px;
+        }
+
+        .child3 {
+            width: 400px;
+        }
+
+        .child4 {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent parent-justifycontent__flexstart">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+    <div class="parent parent-justifycontent__flexend">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+    <div class="parent parent-justifycontent__center">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+    <div class="parent parent-justifycontent__spacebetween">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+    <div class="parent parent-justifycontent__spacearound">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+    </div>
+</body>
+
+</html>
